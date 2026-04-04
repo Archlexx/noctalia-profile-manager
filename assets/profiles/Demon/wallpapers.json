@@ -1,0 +1,14 @@
+{
+  "screens": [
+    {
+      "name": "DP-1",
+      "light": "/home/archlex/Data/Wallpapers/Anime/RED/oni-mask-anime-boy-2k-wallpaper-uhdpaper.com-133@5@l.jpg",
+      "dark": "/home/archlex/Data/Wallpapers/Anime/RED/oni-mask-anime-boy-2k-wallpaper-uhdpaper.com-133@5@l.jpg"
+    },
+    {
+      "name": "HDMI-A-1",
+      "light": "/home/archlex/Data/Wallpapers/Anime/RED/anime-girl-sunglasses-with-tattoo-2k-wallpaper-uhdpaper.com-583@2@a.jpg",
+      "dark": "/home/archlex/Data/Wallpapers/Anime/RED/anime-girl-sunglasses-with-tattoo-2k-wallpaper-uhdpaper.com-583@2@a.jpg"
+    }
+  ]
+}

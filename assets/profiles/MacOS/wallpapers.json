@@ -1,0 +1,14 @@
+{
+  "screens": [
+    {
+      "name": "DP-1",
+      "light": "/home/archlex/Data/Wallpapers/macos-purple-abstract-background-2k-wallpaper-uhdpaper.com-19@0@f.jpg",
+      "dark": "/home/archlex/Data/Wallpapers/macos-purple-abstract-background-2k-wallpaper-uhdpaper.com-19@0@f.jpg"
+    },
+    {
+      "name": "HDMI-A-1",
+      "light": "/home/archlex/Data/Wallpapers/wallhaven-gpeme3_2560x1440.png",
+      "dark": "/home/archlex/Data/Wallpapers/wallhaven-gpeme3_2560x1440.png"
+    }
+  ]
+}

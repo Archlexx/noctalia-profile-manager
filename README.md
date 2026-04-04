@@ -8,6 +8,42 @@ Each profile is a named snapshot of your current Noctalia configuration: color s
 
 ![Preview](preview.png)
 
+<video src="assets/changes_preview_video.mp4" controls width="100%"></video>
+
+---
+
+## Included profiles
+
+### Caelestia
+Light theme with soft blue tones and a minimalist snowy mountain wallpaper. Based on Caelestia-Shell.
+
+![Caelestia](assets/profiles/Caelestia/preview.png)
+
+### Darklestia
+Dark theme with bold red accents and an edgy artistic wallpaper.
+
+![Darklestia](assets/profiles/Darklestia/preview.png)
+
+### Demon
+Vivid red dark theme inspired by oni/demon aesthetics.
+
+![Demon](assets/profiles/Demon/preview.png)
+
+### MacOS
+macOS-style layout with a bottom dock and a colorful purple-pink gradient wallpaper.
+
+![MacOS](assets/profiles/MacOS/preview.png)
+
+### MacOS Dark
+Dark variant of the macOS-inspired theme.
+
+![MacOS Dark](<assets/profiles/MacOS Dark/preview.png>)
+
+### Windows 26
+Dark theme with golden accents and a Windows 11-style taskbar layout.
+
+![Windows 26](<assets/profiles/Windows 26/preview.png>)
+
 ---
 
 ## Features

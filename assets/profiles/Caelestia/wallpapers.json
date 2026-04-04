@@ -1,0 +1,14 @@
+{
+  "screens": [
+    {
+      "name": "DP-1",
+      "light": "/home/archlex/Data/Wallpapers/winter-mountain-2560x1440-24311.jpg",
+      "dark": "/home/archlex/Data/Wallpapers/winter-mountain-2560x1440-24311.jpg"
+    },
+    {
+      "name": "HDMI-A-1",
+      "light": "/home/archlex/Data/Wallpapers/winter-mountain-2560x1440-24311.jpg",
+      "dark": "/home/archlex/Data/Wallpapers/winter-mountain-2560x1440-24311.jpg"
+    }
+  ]
+}
