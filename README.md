@@ -1,6 +1,6 @@
 # Profiles
 
-A [Noctalia](https://github.com/noctalia-dev/noctalia) plugin for saving, loading, and managing shell configuration profiles.
+A [Noctalia](https://github.com/noctalia-dev/noctalia-shell) plugin for saving, loading, and managing shell configuration profiles.
 
 Each profile is a named snapshot of your current Noctalia configuration: color scheme, settings, plugin state, and optionally wallpapers. Apply any profile in one click to switch your entire environment instantly.
 
