@@ -1,3 +1,4 @@
+
 # 🗂️ Profile manager for Noctalia
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -8,7 +9,7 @@ A powerful plugin for [Noctalia](https://github.com/noctalia-dev/noctalia-shell)
 
 ### 📺 Video Demo
 
-https://github.com/user-attachments/assets/bb735a38-15a5-4e46-bef5-97a2da4cbdae
+[https://github.com/user-attachments/assets/bb735a38-15a5-4e46-bef5-97a2da4cbdae](https://github.com/user-attachments/assets/86cbfbe2-f733-477a-994c-2ade249b1e66)
 
 ---
 
