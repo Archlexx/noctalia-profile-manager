@@ -9,17 +9,24 @@
     "action-save": "Зберегти поточний",
     "action-overwrite": "Перезаписати",
     "action-rename": "Перейменувати",
+    "action-export": "Експортувати для обміну",
+    "action-duplicate": "Дублювати",
     "action-delete": "Видалити",
     "more-actions": "Більше дій",
     "include-wallpapers": "Шпалери",
     "rename-title": "Перейменувати профіль",
-    "rename-placeholder": "Нова назва\u2026",
+    "rename-placeholder": "Нова назва…",
     "save-title": "Зберегти профіль",
-    "save-placeholder": "Назва профілю\u2026",
+    "save-placeholder": "Назва профілю…",
     "save-button": "Зберегти",
-    "search-placeholder": "Пошук профілів\u2026",
+    "search-placeholder": "Пошук профілів…",
     "delete-confirm-title": "Видалити профіль?",
-    "delete-confirm-message": "Видалити \"{name}\"? Цю дію не можна скасувати."
+    "delete-confirm-message": "Видалити \"{name}\"? Цю дію не можна скасувати.",
+    "import-button": "Імпортувати профіль",
+    "sort-field-name": "Сортувати за назвою",
+    "sort-field-date": "Сортувати за датою",
+    "sort-dir-asc": "Зростання",
+    "sort-dir-desc": "Спадання"
   },
   "settings": {
     "dir-label": "Тека профілів",
@@ -34,12 +41,15 @@
     "backup-label": "Автоматичне резервне копіювання перед застосуванням",
     "backup-description": "Зберігати поточну конфігурацію в _backups/ перед кожним застосуванням",
     "backup-count-label": "Максимальна кількість резервних копій",
-    "backup-count-description": "Найстаріші записи видаляються автоматично (1\u201320)"
+    "backup-count-description": "Найстаріші записи видаляються автоматично (1–20)"
   },
   "toast": {
     "saved": "Профіль \"{name}\" збережено",
     "applied": "Профіль \"{name}\" застосовано",
-    "deleted": "Профіль \"{name}\" видалено"
+    "deleted": "Профіль \"{name}\" видалено",
+    "exported": "Профіль \"{name}\" експортовано до _exports/",
+    "imported": "Профіль \"{name}\" імпортовано",
+    "duplicated": "Профіль \"{src}\" дублюйовано як \"{dest}\""
   },
   "error": {
     "name-empty": "Назва не може бути порожньою",
@@ -49,7 +59,10 @@
     "save-failed": "Не вдалося зберегти профіль",
     "apply-failed": "Не вдалося застосувати профіль",
     "delete-failed": "Не вдалося видалити профіль",
-    "rename-failed": "Не вдалося перейменувати профіль"
+    "rename-failed": "Не вдалося перейменувати профіль",
+    "export-failed": "Не вдалося експортувати профіль",
+    "import-failed": "Не вдалося імпортувати профіль",
+    "duplicate-failed": "Не вдалося дублювати профіль"
   },
   "ipc": {
     "applied": "Профіль \"{name}\" застосовано",

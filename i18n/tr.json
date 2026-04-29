@@ -9,17 +9,24 @@
     "action-save": "Mevcut olanı kaydet",
     "action-overwrite": "Üzerine yaz",
     "action-rename": "Yeniden adlandır",
+    "action-export": "Paylaşmak için dışa aktar",
+    "action-duplicate": "Kopyala",
     "action-delete": "Sil",
     "more-actions": "Diğer işlemler",
     "include-wallpapers": "Duvar kağıtları",
     "rename-title": "Profili yeniden adlandır",
-    "rename-placeholder": "Yeni ad\u2026",
+    "rename-placeholder": "Yeni ad…",
     "save-title": "Profili kaydet",
-    "save-placeholder": "Profil adı\u2026",
+    "save-placeholder": "Profil adı…",
     "save-button": "Kaydet",
-    "search-placeholder": "Profil ara\u2026",
+    "search-placeholder": "Profil ara…",
     "delete-confirm-title": "Profil silinsin mi?",
-    "delete-confirm-message": "\"{name}\" silinsin mi? Bu işlem geri alınamaz."
+    "delete-confirm-message": "\"{name}\" silinsin mi? Bu işlem geri alınamaz.",
+    "import-button": "Profil içe aktar",
+    "sort-field-name": "Ada göre sırala",
+    "sort-field-date": "Tarihe göre sırala",
+    "sort-dir-asc": "Artan",
+    "sort-dir-desc": "Azalan"
   },
   "settings": {
     "dir-label": "Profil dizini",
@@ -34,12 +41,15 @@
     "backup-label": "Uygulamadan önce otomatik yedekle",
     "backup-description": "Her uygulamadan önce mevcut yapılandırmayı _backups/ dizinine kaydet",
     "backup-count-label": "Saklanacak maksimum yedek sayısı",
-    "backup-count-description": "En eski girişler otomatik olarak silinir (1\u201320)"
+    "backup-count-description": "En eski girişler otomatik olarak silinir (1–20)"
   },
   "toast": {
     "saved": "\"{name}\" profili kaydedildi",
     "applied": "\"{name}\" profili uygulandı",
-    "deleted": "\"{name}\" profili silindi"
+    "deleted": "\"{name}\" profili silindi",
+    "exported": "\"{name}\" profili _exports/ klasörüne aktarıldı",
+    "imported": "\"{name}\" profili içe aktarıldı",
+    "duplicated": "\"{src}\" profili \"{dest}\" olarak kopyalandı"
   },
   "error": {
     "name-empty": "Ad boş olamaz",
@@ -49,7 +59,10 @@
     "save-failed": "Profil kaydedilemedi",
     "apply-failed": "Profil uygulanamadı",
     "delete-failed": "Profil silinemedi",
-    "rename-failed": "Profil yeniden adlandırılamadı"
+    "rename-failed": "Profil yeniden adlandırılamadı",
+    "export-failed": "Profil dışa aktarılamadı",
+    "import-failed": "Profil içe aktaralımadı",
+    "duplicate-failed": "Profil kopyalanamadı"
   },
   "ipc": {
     "applied": "\"{name}\" profili uygulandı",

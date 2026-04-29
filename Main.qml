@@ -46,6 +46,41 @@ Item {
            '_' + pad(now.getHours()) + '-' + pad(now.getMinutes()) + '-' + pad(now.getSeconds())
   }
 
+  function _uniqueName(base) {
+    if (!profileExists(base)) return base
+    var candidate = base + " copy"
+    if (!profileExists(candidate)) return candidate
+    var i = 2
+    while (profileExists(base + " copy " + i)) i++
+    return base + " copy " + i
+  }
+
+  function duplicateProfile(name, callback) {
+    var err = validateName(name)
+    if (err) { if (callback) callback(false, err); return }
+
+    var src = name.trim()
+    var dest = _uniqueName(src)
+
+    _runCommand(["sh", scriptsDir + "/duplicate-profile.sh", _profilePath(src), _profilePath(dest)], function(code, stdout, stderr) {
+      if (code === 0) {
+        Logger.i("ShellProfiles", "Duplicated profile:", src, "->", dest)
+        listProfiles()
+        ToastService.showNotice(
+          pluginApi?.tr("panel.title"),
+          pluginApi?.tr("toast.duplicated", { "src": src, "dest": dest }),
+          pluginIcon
+        )
+        if (callback) callback(true, "")
+      } else {
+        var msg = stderr.trim() || pluginApi?.tr("error.duplicate-failed")
+        Logger.e("ShellProfiles", "Duplicate failed:", msg)
+        ToastService.showError(pluginApi?.tr("panel.title"), msg)
+        if (callback) callback(false, msg)
+      }
+    })
+  }
+
   function profileExists(name) {
     return root.profiles.indexOf(name ? name.trim() : "") !== -1
   }
@@ -359,6 +394,59 @@ Item {
       } else {
         var msg = stderr.trim() || pluginApi?.tr("error.delete-failed")
         Logger.e("ShellProfiles", "Delete failed:", msg)
+        ToastService.showError(pluginApi?.tr("panel.title"), msg)
+        if (callback) callback(false, msg)
+      }
+    })
+  }
+
+  function exportProfile(name, callback) {
+    var err = validateName(name)
+    if (err) { if (callback) callback(false, err); return }
+
+    var trimmed = name.trim()
+    var exportsDir = profilesDir + "_exports/"
+    Quickshell.execDetached(["mkdir", "-p", exportsDir])
+
+    _runCommand(["sh", scriptsDir + "/export-profile.sh", _profilePath(trimmed), exportsDir], function(code, stdout, stderr) {
+      if (code === 0) {
+        Logger.i("ShellProfiles", "Exported profile:", trimmed, "->", exportsDir)
+        ToastService.showNotice(
+          pluginApi?.tr("panel.title"),
+          pluginApi?.tr("toast.exported", { "name": trimmed }),
+          pluginIcon
+        )
+        if (callback) callback(true, "")
+      } else {
+        var msg = stderr.trim() || pluginApi?.tr("error.export-failed")
+        Logger.e("ShellProfiles", "Export failed:", msg)
+        ToastService.showError(pluginApi?.tr("panel.title"), msg)
+        if (callback) callback(false, msg)
+      }
+    })
+  }
+
+  function importProfile(folderPath, callback) {
+    var trimmed = folderPath.trim()
+    if (!trimmed) {
+      if (callback) callback(false, pluginApi?.tr("error.import-failed"))
+      return
+    }
+
+    _runCommand(["sh", scriptsDir + "/import-profile.sh", trimmed, profilesDir], function(code, stdout, stderr) {
+      if (code === 0) {
+        var name = trimmed.replace(/\/$/, "").split("/").pop()
+        Logger.i("ShellProfiles", "Imported profile:", name, "from", trimmed)
+        listProfiles()
+        ToastService.showNotice(
+          pluginApi?.tr("panel.title"),
+          pluginApi?.tr("toast.imported", { "name": name }),
+          pluginIcon
+        )
+        if (callback) callback(true, "")
+      } else {
+        var msg = stderr.trim() || pluginApi?.tr("error.import-failed")
+        Logger.e("ShellProfiles", "Import failed:", msg)
         ToastService.showError(pluginApi?.tr("panel.title"), msg)
         if (callback) callback(false, msg)
       }

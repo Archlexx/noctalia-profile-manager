@@ -9,17 +9,24 @@
     "action-save": "Aktuell speichern",
     "action-overwrite": "Überschreiben",
     "action-rename": "Umbenennen",
+    "action-export": "Zum Teilen exportieren",
+    "action-duplicate": "Duplizieren",
     "action-delete": "Löschen",
     "more-actions": "Weitere Aktionen",
     "include-wallpapers": "Hintergrundbilder",
     "rename-title": "Profil umbenennen",
-    "rename-placeholder": "Neuer Name\u2026",
+    "rename-placeholder": "Neuer Name…",
     "save-title": "Profil speichern",
-    "save-placeholder": "Profilname\u2026",
+    "save-placeholder": "Profilname…",
     "save-button": "Speichern",
-    "search-placeholder": "Profile suchen\u2026",
+    "search-placeholder": "Profile suchen…",
     "delete-confirm-title": "Profil löschen?",
-    "delete-confirm-message": "\"{name}\" löschen? Dies kann nicht rückgängig gemacht werden."
+    "delete-confirm-message": "\"{name}\" löschen? Dies kann nicht rückgängig gemacht werden.",
+    "import-button": "Profil importieren",
+    "sort-field-name": "Nach Name sortieren",
+    "sort-field-date": "Nach Datum sortieren",
+    "sort-dir-asc": "Aufsteigend",
+    "sort-dir-desc": "Absteigend"
   },
   "settings": {
     "dir-label": "Profilverzeichnis",
@@ -34,12 +41,15 @@
     "backup-label": "Automatisch sichern vor dem Anwenden",
     "backup-description": "Aktuelle Konfiguration vor jedem Anwenden in _backups/ sichern",
     "backup-count-label": "Maximale Anzahl an Sicherungen",
-    "backup-count-description": "Älteste Einträge werden automatisch gelöscht (1\u201320)"
+    "backup-count-description": "Älteste Einträge werden automatisch gelöscht (1–20)"
   },
   "toast": {
     "saved": "Profil \"{name}\" gespeichert",
     "applied": "Profil \"{name}\" angewendet",
-    "deleted": "Profil \"{name}\" gelöscht"
+    "deleted": "Profil \"{name}\" gelöscht",
+    "exported": "Profil \"{name}\" exportiert nach _exports/",
+    "imported": "Profil \"{name}\" importiert",
+    "duplicated": "Profil \"{src}\" dupliziert als \"{dest}\""
   },
   "error": {
     "name-empty": "Der Name darf nicht leer sein",
@@ -49,7 +59,10 @@
     "save-failed": "Profil konnte nicht gespeichert werden",
     "apply-failed": "Profil konnte nicht angewendet werden",
     "delete-failed": "Profil konnte nicht gelöscht werden",
-    "rename-failed": "Profil konnte nicht umbenannt werden"
+    "rename-failed": "Profil konnte nicht umbenannt werden",
+    "export-failed": "Profil konnte nicht exportiert werden",
+    "import-failed": "Profil konnte nicht importiert werden",
+    "duplicate-failed": "Profil konnte nicht dupliziert werden"
   },
   "ipc": {
     "applied": "Profil \"{name}\" angewendet",

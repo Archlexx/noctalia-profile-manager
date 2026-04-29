@@ -9,17 +9,24 @@
     "action-save": "Сохранить текущий",
     "action-overwrite": "Перезаписать",
     "action-rename": "Переименовать",
+    "action-export": "Экспортировать для обмена",
+    "action-duplicate": "Дублировать",
     "action-delete": "Удалить",
     "more-actions": "Ещё действия",
     "include-wallpapers": "Обои",
     "rename-title": "Переименовать профиль",
-    "rename-placeholder": "Новое имя\u2026",
+    "rename-placeholder": "Новое имя…",
     "save-title": "Сохранить профиль",
-    "save-placeholder": "Название профиля\u2026",
+    "save-placeholder": "Название профиля…",
     "save-button": "Сохранить",
-    "search-placeholder": "Поиск профилей\u2026",
+    "search-placeholder": "Поиск профилей…",
     "delete-confirm-title": "Удалить профиль?",
-    "delete-confirm-message": "Удалить \"{name}\"? Это действие нельзя отменить."
+    "delete-confirm-message": "Удалить \"{name}\"? Это действие нельзя отменить.",
+    "import-button": "Импортировать профиль",
+    "sort-field-name": "Сортировать по имени",
+    "sort-field-date": "Сортировать по дате",
+    "sort-dir-asc": "По возрастанию",
+    "sort-dir-desc": "По убыванию"
   },
   "settings": {
     "dir-label": "Папка профилей",
@@ -34,12 +41,15 @@
     "backup-label": "Автоматическое резервное копирование перед применением",
     "backup-description": "Сохранять текущую конфигурацию в _backups/ перед каждым применением",
     "backup-count-label": "Максимальное количество резервных копий",
-    "backup-count-description": "Старые записи удаляются автоматически (1\u201320)"
+    "backup-count-description": "Старые записи удаляются автоматически (1–20)"
   },
   "toast": {
     "saved": "Профиль \"{name}\" сохранён",
     "applied": "Профиль \"{name}\" применён",
-    "deleted": "Профиль \"{name}\" удалён"
+    "deleted": "Профиль \"{name}\" удалён",
+    "exported": "Профиль \"{name}\" экспортирован в _exports/",
+    "imported": "Профиль \"{name}\" импортирован",
+    "duplicated": "Профиль \"{src}\" дублирован как \"{dest}\""
   },
   "error": {
     "name-empty": "Имя не может быть пустым",
@@ -49,7 +59,10 @@
     "save-failed": "Не удалось сохранить профиль",
     "apply-failed": "Не удалось применить профиль",
     "delete-failed": "Не удалось удалить профиль",
-    "rename-failed": "Не удалось переименовать профиль"
+    "rename-failed": "Не удалось переименовать профиль",
+    "export-failed": "Не удалось экспортировать профиль",
+    "import-failed": "Не удалось импортировать профиль",
+    "duplicate-failed": "Не удалось дублировать профиль"
   },
   "ipc": {
     "applied": "Профиль \"{name}\" применён",
