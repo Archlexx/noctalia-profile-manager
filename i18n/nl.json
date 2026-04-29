@@ -9,17 +9,24 @@
     "action-save": "Huidig opslaan",
     "action-overwrite": "Overschrijven",
     "action-rename": "Hernoemen",
+    "action-export": "Exporteren voor delen",
+    "action-duplicate": "Dupliceren",
     "action-delete": "Verwijderen",
     "more-actions": "Meer acties",
     "include-wallpapers": "Achtergronden",
     "rename-title": "Profiel hernoemen",
-    "rename-placeholder": "Nieuwe naam\u2026",
+    "rename-placeholder": "Nieuwe naam…",
     "save-title": "Profiel opslaan",
-    "save-placeholder": "Profielnaam\u2026",
+    "save-placeholder": "Profielnaam…",
     "save-button": "Opslaan",
-    "search-placeholder": "Profielen zoeken\u2026",
+    "search-placeholder": "Profielen zoeken…",
     "delete-confirm-title": "Profiel verwijderen?",
-    "delete-confirm-message": "\"{name}\" verwijderen? Dit kan niet ongedaan worden gemaakt."
+    "delete-confirm-message": "\"{name}\" verwijderen? Dit kan niet ongedaan worden gemaakt.",
+    "import-button": "Profiel importeren",
+    "sort-field-name": "Sorteren op naam",
+    "sort-field-date": "Sorteren op datum",
+    "sort-dir-asc": "Oplopend",
+    "sort-dir-desc": "Aflopend"
   },
   "settings": {
     "dir-label": "Profielenmap",
@@ -34,12 +41,15 @@
     "backup-label": "Automatisch back-up maken voor toepassen",
     "backup-description": "Huidige configuratie opslaan in _backups/ voor elke toepassing",
     "backup-count-label": "Maximaal aantal back-ups",
-    "backup-count-description": "Oudste vermeldingen worden automatisch verwijderd (1\u201320)"
+    "backup-count-description": "Oudste vermeldingen worden automatisch verwijderd (1–20)"
   },
   "toast": {
     "saved": "Profiel \"{name}\" opgeslagen",
     "applied": "Profiel \"{name}\" toegepast",
-    "deleted": "Profiel \"{name}\" verwijderd"
+    "deleted": "Profiel \"{name}\" verwijderd",
+    "exported": "Profiel \"{name}\" geëxporteerd naar _exports/",
+    "imported": "Profiel \"{name}\" geïmporteerd",
+    "duplicated": "Profiel \"{src}\" gedupliceerd als \"{dest}\""
   },
   "error": {
     "name-empty": "Naam mag niet leeg zijn",
@@ -49,7 +59,10 @@
     "save-failed": "Profiel opslaan mislukt",
     "apply-failed": "Profiel toepassen mislukt",
     "delete-failed": "Profiel verwijderen mislukt",
-    "rename-failed": "Profiel hernoemen mislukt"
+    "rename-failed": "Profiel hernoemen mislukt",
+    "export-failed": "Profiel exporteren mislukt",
+    "import-failed": "Profiel importeren mislukt",
+    "duplicate-failed": "Profiel dupliceren mislukt"
   },
   "ipc": {
     "applied": "Profiel \"{name}\" toegepast",

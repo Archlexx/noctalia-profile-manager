@@ -9,17 +9,24 @@
     "action-save": "Guardar atual",
     "action-overwrite": "Substituir",
     "action-rename": "Renomear",
+    "action-export": "Exportar para compartilhar",
+    "action-duplicate": "Duplicar",
     "action-delete": "Eliminar",
     "more-actions": "Mais ações",
     "include-wallpapers": "Wallpapers",
     "rename-title": "Renomear perfil",
-    "rename-placeholder": "Novo nome\u2026",
+    "rename-placeholder": "Novo nome…",
     "save-title": "Guardar perfil",
-    "save-placeholder": "Nome do perfil\u2026",
+    "save-placeholder": "Nome do perfil…",
     "save-button": "Guardar",
-    "search-placeholder": "Pesquisar perfis\u2026",
+    "search-placeholder": "Pesquisar perfis…",
     "delete-confirm-title": "Eliminar perfil?",
-    "delete-confirm-message": "Eliminar \"{name}\"? Esta ação não pode ser desfeita."
+    "delete-confirm-message": "Eliminar \"{name}\"? Esta ação não pode ser desfeita.",
+    "import-button": "Importar perfil",
+    "sort-field-name": "Ordenar por nome",
+    "sort-field-date": "Ordenar por data",
+    "sort-dir-asc": "Crescente",
+    "sort-dir-desc": "Decrescente"
   },
   "settings": {
     "dir-label": "Diretório dos perfis",
@@ -34,12 +41,15 @@
     "backup-label": "Cópia de segurança automática antes de aplicar",
     "backup-description": "Guarda a configuração atual em _backups/ antes de cada aplicação",
     "backup-count-label": "Número máximo de cópias de segurança",
-    "backup-count-description": "As entradas mais antigas são eliminadas automaticamente (1\u201320)"
+    "backup-count-description": "As entradas mais antigas são eliminadas automaticamente (1–20)"
   },
   "toast": {
     "saved": "Perfil \"{name}\" guardado",
     "applied": "Perfil \"{name}\" aplicado",
-    "deleted": "Perfil \"{name}\" eliminado"
+    "deleted": "Perfil \"{name}\" eliminado",
+    "exported": "Perfil \"{name}\" exportado para _exports/",
+    "imported": "Perfil \"{name}\" importado",
+    "duplicated": "Perfil \"{src}\" duplicado como \"{dest}\""
   },
   "error": {
     "name-empty": "O nome não pode estar vazio",
@@ -49,7 +59,10 @@
     "save-failed": "Falha ao guardar o perfil",
     "apply-failed": "Falha ao aplicar o perfil",
     "delete-failed": "Falha ao eliminar o perfil",
-    "rename-failed": "Falha ao renomear o perfil"
+    "rename-failed": "Falha ao renomear perfil",
+    "export-failed": "Falha ao exportar perfil",
+    "import-failed": "Falha ao importar o perfil",
+    "duplicate-failed": "Falha ao duplicar o perfil"
   },
   "ipc": {
     "applied": "Perfil \"{name}\" aplicado",

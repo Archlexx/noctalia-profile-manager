@@ -9,17 +9,24 @@
     "action-save": "Salva corrente",
     "action-overwrite": "Sovrascrivi",
     "action-rename": "Rinomina",
+    "action-export": "Esporta per condividere",
+    "action-duplicate": "Duplica",
     "action-delete": "Elimina",
     "more-actions": "Altre azioni",
     "include-wallpapers": "Sfondi",
     "rename-title": "Rinomina profilo",
-    "rename-placeholder": "Nuovo nome\u2026",
+    "rename-placeholder": "Nuovo nome…",
     "save-title": "Salva profilo",
-    "save-placeholder": "Nome del profilo\u2026",
+    "save-placeholder": "Nome del profilo…",
     "save-button": "Salva",
-    "search-placeholder": "Cerca profili\u2026",
+    "search-placeholder": "Cerca profili…",
     "delete-confirm-title": "Eliminare il profilo?",
-    "delete-confirm-message": "Eliminare \"{name}\"? Questa azione non può essere annullata."
+    "delete-confirm-message": "Eliminare \"{name}\"? Questa azione non può essere annullata.",
+    "import-button": "Importa profilo",
+    "sort-field-name": "Ordina per nome",
+    "sort-field-date": "Ordina per data",
+    "sort-dir-asc": "Crescente",
+    "sort-dir-desc": "Decrescente"
   },
   "settings": {
     "dir-label": "Directory dei profili",
@@ -34,12 +41,15 @@
     "backup-label": "Backup automatico prima di applicare",
     "backup-description": "Salva la configurazione attuale in _backups/ prima di ogni applicazione",
     "backup-count-label": "Numero massimo di backup",
-    "backup-count-description": "Le voci più vecchie vengono eliminate automaticamente (1\u201320)"
+    "backup-count-description": "Le voci più vecchie vengono eliminate automaticamente (1–20)"
   },
   "toast": {
     "saved": "Profilo \"{name}\" salvato",
     "applied": "Profilo \"{name}\" applicato",
-    "deleted": "Profilo \"{name}\" eliminato"
+    "deleted": "Profilo \"{name}\" eliminato",
+    "exported": "Profilo \"{name}\" esportato in _exports/",
+    "imported": "Profilo \"{name}\" importato",
+    "duplicated": "Profilo \"{src}\" duplicato come \"{dest}\""
   },
   "error": {
     "name-empty": "Il nome non può essere vuoto",
@@ -49,7 +59,10 @@
     "save-failed": "Salvataggio del profilo non riuscito",
     "apply-failed": "Applicazione del profilo non riuscita",
     "delete-failed": "Eliminazione del profilo non riuscita",
-    "rename-failed": "Rinomina del profilo non riuscita"
+    "rename-failed": "Rinomina del profilo non riuscita",
+    "export-failed": "Esportazione del profilo non riuscita",
+    "import-failed": "Impossibile importare il profilo",
+    "duplicate-failed": "Impossibile duplicare il profilo"
   },
   "ipc": {
     "applied": "Profilo \"{name}\" applicato",

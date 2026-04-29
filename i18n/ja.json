@@ -9,17 +9,24 @@
     "action-save": "現在を保存",
     "action-overwrite": "上書き",
     "action-rename": "名前変更",
+    "action-export": "共有用にエクスポート",
+    "action-duplicate": "複製",
     "action-delete": "削除",
     "more-actions": "その他の操作",
     "include-wallpapers": "壁紙",
     "rename-title": "プロファイルの名前変更",
-    "rename-placeholder": "新しい名前\u2026",
+    "rename-placeholder": "新しい名前…",
     "save-title": "プロファイルを保存",
-    "save-placeholder": "プロファイル名\u2026",
+    "save-placeholder": "プロファイル名…",
     "save-button": "保存",
-    "search-placeholder": "プロファイルを検索\u2026",
+    "search-placeholder": "プロファイルを検索…",
     "delete-confirm-title": "プロファイルを削除しますか？",
-    "delete-confirm-message": "\"{name}\" を削除しますか？この操作は元に戻せません。"
+    "delete-confirm-message": "\"{name}\" を削除しますか？この操作は元に戻せません。",
+    "import-button": "プロフィールをインポート",
+    "sort-field-name": "名前でソート",
+    "sort-field-date": "日付でソート",
+    "sort-dir-asc": "昇順",
+    "sort-dir-desc": "降順"
   },
   "settings": {
     "dir-label": "プロファイルディレクトリ",
@@ -34,12 +41,15 @@
     "backup-label": "適用前に自動バックアップ",
     "backup-description": "各適用の前に現在の設定を _backups/ に保存する",
     "backup-count-label": "保持するバックアップの最大数",
-    "backup-count-description": "古いエントリは自動的に削除されます（1\u201320）"
+    "backup-count-description": "古いエントリは自動的に削除されます（1–20）"
   },
   "toast": {
     "saved": "プロファイル \"{name}\" を保存しました",
     "applied": "プロファイル \"{name}\" を適用しました",
-    "deleted": "プロファイル \"{name}\" を削除しました"
+    "deleted": "プロファイル \"{name}\" を削除しました",
+    "exported": "プロファイル \"{name}\" を _exports/ にエクスポートしました",
+    "imported": "プロフィール \"{name}\" をインポートしました",
+    "duplicated": "プロフィール \"{src}\" を \"{dest}\" として複製しました"
   },
   "error": {
     "name-empty": "名前は空にできません",
@@ -49,7 +59,10 @@
     "save-failed": "プロファイルの保存に失敗しました",
     "apply-failed": "プロファイルの適用に失敗しました",
     "delete-failed": "プロファイルの削除に失敗しました",
-    "rename-failed": "プロファイルの名前変更に失敗しました"
+    "rename-failed": "プロファイルの名前変更に失敗しました",
+    "export-failed": "プロファイルのエクスポートに失敗しました",
+    "import-failed": "プロフィールのインポートに失敗しました",
+    "duplicate-failed": "プロフィールの複製に失敗しました"
   },
   "ipc": {
     "applied": "プロファイル \"{name}\" を適用しました",

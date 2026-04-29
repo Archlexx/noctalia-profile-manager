@@ -4,26 +4,33 @@
   },
   "panel": {
     "title": "Perfiles",
-    "empty": "Sin perfiles a\u00fan. Guarda tu configuraci\u00f3n actual para empezar.",
+    "empty": "Sin perfiles aún. Guarda tu configuración actual para empezar.",
     "action-apply": "Aplicar",
     "action-save": "Guardar actual",
     "action-overwrite": "Sobreescribir",
     "action-rename": "Renombrar",
+    "action-export": "Exportar para compartir",
+    "action-duplicate": "Duplicar",
     "action-delete": "Eliminar",
-    "more-actions": "M\u00e1s acciones",
+    "more-actions": "Más acciones",
     "include-wallpapers": "Fondos de pantalla",
     "rename-title": "Renombrar perfil",
-    "rename-placeholder": "Nuevo nombre\u2026",
+    "rename-placeholder": "Nuevo nombre…",
     "save-title": "Guardar perfil",
-    "save-placeholder": "Nombre del perfil\u2026",
+    "save-placeholder": "Nombre del perfil…",
     "save-button": "Guardar",
     "search-placeholder": "Buscar perfiles…",
     "delete-confirm-title": "¿Eliminar perfil?",
-    "delete-confirm-message": "¿Eliminar \"{name}\"? Esta acción no se puede deshacer."
+    "delete-confirm-message": "¿Eliminar \"{name}\"? Esta acción no se puede deshacer.",
+    "import-button": "Importar perfil",
+    "sort-field-name": "Ordenar por nombre",
+    "sort-field-date": "Ordenar por fecha",
+    "sort-dir-asc": "Ascendente",
+    "sort-dir-desc": "Descendente"
   },
   "settings": {
     "dir-label": "Directorio de perfiles",
-    "dir-description": "D\u00f3nde se almacenan los perfiles en disco",
+    "dir-description": "Dónde se almacenan los perfiles en disco",
     "dir-select": "Seleccionar carpeta",
     "icon-label": "Icono del widget",
     "icon-description": "Nombre del icono Tabler mostrado en la barra",
@@ -34,22 +41,28 @@
     "backup-label": "Copia de seguridad antes de aplicar",
     "backup-description": "Guarda la config actual en _backups/ antes de cada aplicación",
     "backup-count-label": "Máximo de copias a conservar",
-    "backup-count-description": "Las entradas más antiguas se eliminan automáticamente (1\u201320)"
+    "backup-count-description": "Las entradas más antiguas se eliminan automáticamente (1–20)"
   },
   "toast": {
     "saved": "Perfil \"{name}\" guardado",
     "applied": "Perfil \"{name}\" aplicado",
-    "deleted": "Perfil \"{name}\" eliminado"
+    "deleted": "Perfil \"{name}\" eliminado",
+    "exported": "Perfil \"{name}\" exportado a _exports/",
+    "imported": "Perfil \"{name}\" importado",
+    "duplicated": "Perfil \"{src}\" duplicado como \"{dest}\""
   },
   "error": {
-    "name-empty": "El nombre no puede estar vac\u00edo",
-    "name-too-long": "El nombre es demasiado largo (m\u00e1x. 64 caracteres)",
-    "name-invalid": "El nombre contiene caracteres no v\u00e1lidos",
+    "name-empty": "El nombre no puede estar vacío",
+    "name-too-long": "El nombre es demasiado largo (máx. 64 caracteres)",
+    "name-invalid": "El nombre contiene caracteres no válidos",
     "name-exists": "Ya existe un perfil con ese nombre",
     "save-failed": "Error al guardar el perfil",
     "apply-failed": "Error al aplicar el perfil",
     "delete-failed": "Error al eliminar el perfil",
-    "rename-failed": "Error al renombrar el perfil"
+    "rename-failed": "Error al renombrar el perfil",
+    "export-failed": "Error al exportar el perfil",
+    "import-failed": "Error al importar el perfil",
+    "duplicate-failed": "Error al duplicar el perfil"
   },
   "ipc": {
     "applied": "Perfil \"{name}\" aplicado",

@@ -2,7 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Noctalia Version](https://img.shields.io/badge/Noctalia-Plugin-orange)](https://github.com/noctalia-dev/noctalia-shell)
-![Languages](https://img.shields.io/badge/Languages-12-blue)
+![Languages](https://img.shields.io/badge/Languages-13-blue)
 
 A powerful plugin for [Noctalia](https://github.com/noctalia-dev/noctalia-shell) to save, load, and manage your entire desktop configuration snapshots. Switch between setups, colors, and wallpapers in a single click.
 
@@ -18,19 +18,25 @@ https://github.com/user-attachments/assets/bb735a38-15a5-4e46-bef5-97a2da4cbdae
 - **Apply profiles** — Restore a full configuration instantly.
 - **Active indicator** — Visual feedback (accent bar + check icon) for the current profile.
 - **Auto-backup** — Safety first! Current config is backed up before applying new ones.
+- **Export profiles** — Share your setup: exports a profile to `_exports/` with machine-specific keys stripped automatically.
+- **Import profiles** — Import any profile folder via the built-in folder picker.
+- **Duplicate profiles** — Clone any profile in one click; auto-names as `copy`, `copy 2`, etc.
+- **Sort** — Sort profiles by name or date, ascending or descending.
 - **Search** — Real-time filtering by profile name.
 - **IPC Support** — Fully scriptable via `qs ipc`.
-- **i18n** — Support for 12 languages out of the box.
+- **i18n** — Support for 13 languages out of the box.
 
 ---
 
 ## 🎨 Included Profiles
 
-| **Caelestia** | **Darklestia** | **Demon** |
+| **Abyss** | **ArchOps** | **Caelestia** |
 | :---: | :---: | :---: |
-| ![Caelestia](assets/profiles/Caelestia/preview.png) | ![Darklestia](assets/profiles/Darklestia/preview.png) | ![Demon](assets/profiles/Demon/preview.png) |
-| **MacOS** | **MacOS Dark** | **Windows 26** |
-| ![MacOS](assets/profiles/MacOS/preview.png) | ![MacOS Dark](<assets/profiles/MacOS Dark/preview.png>) | ![Windows 26](<assets/profiles/Windows 26/preview.png>) |
+| ![Abyss](assets/profiles/Abyss/preview.png) | ![ArchOps](assets/profiles/ArchOps/preview.png) | ![Caelestia](assets/profiles/Caelestia/preview.png) |
+| **Dev** | **Jade Glass** | **MacOS** |
+| ![Dev](assets/profiles/Dev/preview.png) | ![Jade Glass](assets/profiles/JadeGlass/preview.png) | ![MacOS](assets/profiles/MacOS/preview.png) |
+| **Oni** | **Windows 26** | |
+| ![Oni](<assets/profiles/Oni/preview.png>) | ![Windows 26](<assets/profiles/Windows 26/preview.png>) | |
 
 ---
 
@@ -74,8 +80,15 @@ https://github.com/user-attachments/assets/bb735a38-15a5-4e46-bef5-97a2da4cbdae
 │   ├── plugins.json
 │   ├── wallpapers.json
 │   └── meta.json          ← { "savedAt": "2026-04-03T00:35:00.000Z" }
-└── _backups/
-    └── 2026-04-03_00-35-00/
+├── _backups/
+│   └── 2026-04-03_00-35-00/
+│       ├── settings.json
+│       ├── colors.json
+│       ├── plugins.json
+│       ├── wallpapers.json
+│       └── meta.json
+└── _exports/
+    └── my-profile/        ← stripped of machine-specific keys, ready to share
         ├── settings.json
         ├── colors.json
         ├── plugins.json
@@ -157,6 +170,7 @@ bindsym $mod+Shift+F1 exec qs ipc call plugin:shell-profiles applyProfile 'my-pr
 | `zh-CN` | Chinese (Simplified) |
 | `tr` | Turkish |
 | `uk-UA` | Ukrainian |
+| `vi` | Vietnamese |
 
 ---
 ## 📜 License

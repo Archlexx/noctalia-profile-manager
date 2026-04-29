@@ -9,13 +9,20 @@
     "action-save": "Save current",
     "action-overwrite": "Overwrite",
     "action-rename": "Rename",
+    "action-export": "Export for sharing",
+    "action-duplicate": "Duplicate",
     "action-delete": "Delete",
+    "import-button": "Import profile",
+    "sort-field-name": "Sort by name",
+    "sort-field-date": "Sort by date",
+    "sort-dir-asc": "Ascending",
+    "sort-dir-desc": "Descending",
     "more-actions": "More actions",
     "include-wallpapers": "Wallpapers",
     "rename-title": "Rename profile",
-    "rename-placeholder": "New name\u2026",
+    "rename-placeholder": "New name…",
     "save-title": "Save profile",
-    "save-placeholder": "Profile name\u2026",
+    "save-placeholder": "Profile name…",
     "save-button": "Save",
     "search-placeholder": "Search profiles…",
     "delete-confirm-title": "Delete profile?",
@@ -34,12 +41,15 @@
     "backup-label": "Auto-backup before applying",
     "backup-description": "Save current config to _backups/ before each profile apply",
     "backup-count-label": "Maximum backups to keep",
-    "backup-count-description": "Oldest entries are deleted automatically (1\u201320)"
+    "backup-count-description": "Oldest entries are deleted automatically (1–20)"
   },
   "toast": {
     "saved": "Profile \"{name}\" saved",
     "applied": "Profile \"{name}\" applied",
-    "deleted": "Profile \"{name}\" deleted"
+    "deleted": "Profile \"{name}\" deleted",
+    "exported": "Profile \"{name}\" exported to _exports/",
+    "imported": "Profile \"{name}\" imported",
+    "duplicated": "Profile \"{src}\" duplicated as \"{dest}\""
   },
   "error": {
     "name-empty": "Name cannot be empty",
@@ -49,7 +59,10 @@
     "save-failed": "Failed to save profile",
     "apply-failed": "Failed to apply profile",
     "delete-failed": "Failed to delete profile",
-    "rename-failed": "Failed to rename profile"
+    "rename-failed": "Failed to rename profile",
+    "export-failed": "Failed to export profile",
+    "import-failed": "Failed to import profile",
+    "duplicate-failed": "Failed to duplicate profile"
   },
   "ipc": {
     "applied": "Profile \"{name}\" applied",
