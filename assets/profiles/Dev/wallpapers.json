@@ -1,0 +1,14 @@
+{
+  "screens": [
+    {
+      "name": "DP-1",
+      "light": "/home/archlex/Data/Wallpapers/wallhaven-8xze11_2560x1440.png",
+      "dark": "/home/archlex/Data/Wallpapers/wallhaven-8xze11_2560x1440.png"
+    },
+    {
+      "name": "HDMI-A-1",
+      "light": "/home/archlex/Data/Wallpapers/Powerblckandwht.png",
+      "dark": "/home/archlex/Data/Wallpapers/Powerblckandwht.png"
+    }
+  ]
+}
